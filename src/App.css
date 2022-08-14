@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.ParentBox {
+  widht: 100%;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 100px;
+  margin: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Foto {
+  float: left;
+  width: 50%;
+  height: 650px;
+  background: #e3e9ee;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Foto img {
+  width: 100%;
+}
+
+.Deskripsi {
+  width: 40%;
+  overflow: hidden;
+  float: left;
+  margin-left: 50px;
+}
+
+.Deskripsi .Cate {
+  font-size: 16px;
+  font-weight: 600;
+  color: #999aa4;
+}
+
+.Deskripsi .Title {
+  font-size: 42px;
+  font-weight: bold;
+  color: #34364a;
+  margin-bottom: 16px;
+}
+
+.Deskripsi .Price {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #34364a;
+  margin-bottom: 10px;
+}
+
+.Deskripsi .Info {
+  font-size: 16px;
+  color: #999aa4;
+}
+
+.Deskripsi .button-cta {
+  font-weight: 600;
+  color: #34364a;
+  text-decoration: none;
+  background-color: #e3e9ee;
+  padding: 16px 35px;
+  border: none;
+  border-radius: 5px;
+}
+
+.Deskripsi .button-cta:hover {
+  background-color: #34364a;
+  color: #e3e9ee;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .ParentBox {
+    widht: 100%;
+    overflow: hidden;
+    margin: auto;
+    margin: 20px;
   }
 }
